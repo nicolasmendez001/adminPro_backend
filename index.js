@@ -17,7 +17,11 @@ dbConnect();
 
 //Rutas
 app.use('/api/usuarios', require('./routes/usuarioRouter'));
+app.use('/api/hospitales', require('./routes/hospitalesRouter'));
+app.use('/api/medicos', require('./routes/medicosRouter'));
 app.use('/api/login', require('./routes/authRouter'));
+app.use('/api/todo', require('./routes/busquedasRouter'));
+app.use('/api/upload', require('./routes/uploadRouter'));
 
 
 
